@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html>
+  <html >
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,31 +17,31 @@
 
     </head>
 
-    <body>
+    <body id="home" class="scrollspy">
 
       <!-- navbar start -->
       <div class="navbar-fixed">
          <nav class="blue lighten-2">
             <div class="container">
                <div class="nav-wrapper">
-                  <a href="#!" class="brand-logo">Eri Maulana</a>
+                  <a href="#home" class="brand-logo">Eri Maulana</a>
                   <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
-                     <li><a href="">About Us</a></li>
-                     <li><a href="">Clients</a></li>
-                     <li><a href="">Services</a></li>
-                     <li><a href="">Portfolio</a></li>
-                     <li><a href="">Contact Us</a></li>
+                     <li><a href="#about">About Us</a></li>
+                     <li><a href="#clients">Clients</a></li>
+                     <li><a href="#services">Services</a></li>
+                     <li><a href="#portfolio">Portfolio</a></li>
+                     <li><a href="#contact">Contact Us</a></li>
                   </ul>
                </div>
             </div>
          </nav>
          <ul class="sidenav" id="mobile-nav">
-            <li><a href="">About Us</a></li>
-            <li><a href="">Clients</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
        </div>
       <!-- navbar end -->
@@ -75,7 +75,7 @@
       <!-- slider end -->
       
       <!-- about start -->
-      <section class="about" id="about">
+      <section class="about scrollspy" id="about">
          <div class="container">
             <div class="row">
                <h3 class="center light grey-text text-darken-3">About Us</h3>
@@ -103,12 +103,12 @@
       <!-- about end -->
       
       <!-- parallax start -->
-      <div class="parallax-container" >
-         <div class="parallax">
+      <div class="parallax-container clients scrollspy" id="clients">
+         <div class="parallax" >
             <img src="assets/img/9.jpg">
          </div>
 
-            <div class="container clients">
+            <div class="container clients " >
                <h3 class="center light white-text">Our Client</h3>
                <div class="row">
                   <div class="col m4 s12 center">
@@ -122,12 +122,157 @@
                   </div>
                </div>
             </div>
-
        </div>
       <!-- parallax end -->
-
-
-
+      
+      <!-- services start -->
+      <section class="services grey lighten-3 scrollspy" id="services">
+         <div class="container">
+            <div class="row">
+               <h3 class="light center grey-text text-darken-3">Our Services</h3>
+               <div class="col m4 s12">
+                  <div class="card-panel center">
+                     <i class="material-icons medium">computer</i>
+                     <h5>Web Development</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae?</p>
+                  </div>
+               </div>
+               <div class="col m4 s12">
+                  <div class="card-panel center">
+                     <i class="material-icons medium">smartphone</i>
+                     <h5>Mobile Apps</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae?</p>
+                  </div>
+               </div>
+               <div class="col m4 s12">
+                  <div class="card-panel center">
+                     <i class="material-icons medium">gamepad</i>
+                     <h5>Game Development</h5>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, recusandae?</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- services end -->
+      
+      <!-- portfolio start -->
+      <section class="portfolio scrollspy" id="portfolio">
+         <div class="container">
+            <h3 class="light center grey-text text-darken-3">Portfolio</h3>
+            <div class="row">
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/1.jpg" class="responsive-img materialboxed">
+               </div>
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/2.jpg" class="responsive-img materialboxed">
+               </div>
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/3.jpg" class="responsive-img materialboxed">
+               </div>
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/4.jpg" class="responsive-img materialboxed">
+               </div>
+            </div>
+            <div class="row">
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/5.jpg" class="responsive-img materialboxed">
+               </div>
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/6.jpg" class="responsive-img materialboxed">
+               </div>
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/7.jpg" class="responsive-img materialboxed">
+               </div>
+               <div class="col m3 s12">
+                  <img src="assets/img/portfolio/8.jpg" class="responsive-img materialboxed">
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- portfolio end -->
+      
+      <!-- contact start -->
+      <section class="contact scrollspy" id="contact">
+         <div class="container">
+            <h3 class="light center grey-text text-darken-3">Contact Us</h3>
+            <div class="row">
+               <div class="col m5 s12">
+                  <div class="card blue">
+                     <div class="card-content white-text center">
+                        <i class="material-icons">drafts</i>
+                        <h5>Contact Us </h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, culpa.</p>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <div class="card-content center">
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td><h4>Eri Maulana</h4></td>
+                              </tr>
+                              <tr>
+                                 <td><p>Mahasiswa | Freelance</p></td>
+                              </tr>
+                              <tr>
+                                 <td><p>Sukabumi, West Java</p></td>
+                              </tr>
+                              <tr>
+                                 <td><p>Indonesia</p></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="col m7 s12">
+                  <div class="card">
+                     <div class="card-content ">
+                        <h5>Please fill this form.~</h5>
+                        <form action="" class="center">
+                           <div class="row">
+                              <div class="input-field col s12">
+                                <input id="name" type="text" class="validate">
+                                <label for="name">Name</label>
+                              </div>
+                              <div class="input-field col s12">
+                                <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                              </div>
+                              <div class="input-field col s12">
+                                <input id="phone" type="text" class="validate">
+                                <label for="phone">Phone Number</label>
+                              </div>
+                              <div class="input-field col s12">
+                                <input id="message" type="text" class="validate">
+                                <label for="message">Message</label>
+                              </div>
+                              <button class="btn waves-effect waves-light " type="submit" name="action">Submit
+                                 <i class="material-icons right">send</i>
+                               </button>
+                            </div>
+                        </form>
+                     </div>
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- contact end -->
+      
+      <!-- footer start -->
+      <footer class="page-footer blue lighten-3">
+         <div class="footer-copyright blue lighten-3">
+            <div class="container flow-text">
+               &copy;Copyright 2023
+               <a class="grey-text text-lighten-4 right" href="https://instagram.com/erimaulana.69/" target="_blank">Eri Maulana</a>
+            </div>
+         </div>
+      </footer>
+      <!-- footer end -->
+      
 
 
       <!--JavaScript Materialize-->
